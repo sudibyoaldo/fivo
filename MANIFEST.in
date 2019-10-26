@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include fivo *.css
+recursive-include fivo *.csv
+recursive-include fivo *.html
+recursive-include fivo *.ico
+recursive-include fivo *.js
+recursive-include fivo *.json
+recursive-include fivo *.md
+recursive-include fivo *.png
+recursive-include fivo *.py
+recursive-include fivo *.svg
+recursive-include fivo *.txt
+recursive-exclude fivo *.pyc
