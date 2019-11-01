@@ -8,3 +8,6 @@ from frappe.model.document import Document
 
 class Transaksi(Document):
 	pass
+	
+
+		
