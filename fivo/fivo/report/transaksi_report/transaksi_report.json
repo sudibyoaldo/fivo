@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "creation": "2019-11-04 02:02:31.081326",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"add_total_row\": 0}",
+ "modified": "2019-11-04 02:32:45.169709",
+ "modified_by": "Administrator",
+ "module": "Fivo",
+ "name": "Transaksi Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select\n\n`tabTransaksi`.nama_pelanggan as \"Nama Pelanggan:data:20\",\nsum(`tabTransaksi`.total_transaksi) as \"Total Transaksi:20\",\nsum(`tabTransaksi`.point_use) as \"Point Digunakan:20\",\nsum(`tabTransaksi`.point_get) as \"Point Didapat:20\",\n`tabTransaksi`.tanggal_transaksi as \"Tanggal Transaksi:Date:100\"\n\nfrom `tabTransaksi`\ngroup by `tabTransaksi`.nama_pelanggan order by `tabTransaksi`.tanggal_transaksi desc",
+ "ref_doctype": "Transaksi",
+ "report_name": "Transaksi Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
